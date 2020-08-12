@@ -91,7 +91,7 @@
 
 /**
  * A job is running if:
- * (lastRunAt exists AND lastFinishedAt does not exist)
+ * (lastRunAt exists AND lastFinishedAt is null)
  * OR
  * (lastRunAt exists AND lastFinishedAt exists but the lastRunAt is newer [in time] than lastFinishedAt)
  * @name Job#isRunning
